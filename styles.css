@@ -1,0 +1,185 @@
+:root {
+    --black : #202124;
+    --border: #D9DCE0;
+    --input: #7b7f82;
+    --subColor: #5F6367;
+    --blue: #1D72E7;
+    --lightBlue: #1D72E7;
+    --hoverBlue:rgba(178,235,242,0.3);
+    --thickBlue: #01579b;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid var(--border);
+    height: 100%;
+    margin-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+.container h1 {
+    font-weight: 400;
+    font-size: 25px;
+}
+.googleIcon {
+    width: 10%;
+    height: auto;
+}
+.form .bioData {
+    display: flex;
+    justify-self: space-around;
+    margin-bottom: 30px;
+}
+.form .bioData div:last-child {
+    margin-left: 20px;
+}
+.form .passwords {
+    display: flex;
+    justify-content: space-between;
+}
+.form .passwords div:last-child {
+    margin-left: 20px;
+}
+input {
+    border: 1px solid var(--border);
+    outline: none;
+    padding:9px;
+    border-radius: 4px;
+    color: var(--input);
+    font-size: 15px;
+}
+button {
+    background-color: var(--blue);
+    color:white;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.bottomActions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 40px;
+}
+.useCurrent {
+    color: var(--lightBlue);
+    font-size: 14px;
+    padding: 10px;
+    width:75%;
+}
+.useCurrent:hover {
+    color: var(--thickBlue);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--hoverBlue);
+}
+.bottomActions div:first-child label {
+    color: var(--lightBlue);
+    font-size: 14px;
+    padding: 10px;
+}
+.bottomActions div:first-child label:hover {
+    color: var(--thickBlue);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--hoverBlue);
+}
+button:hover {
+    box-shadow: -1px 13px 14px -3px rgba(0,0,0,0.34);
+    cursor: pointer;
+}
+.subText {
+    font-size:12px;
+    color: var(--subColor);
+    margin-left: 10px;
+    text-align: left;
+}
+.userNameContainer {
+    position: relative;
+}
+.userNameContainer input {
+    width: 100%;
+}
+.userNameContainer  label {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    font-weight: 300;
+    font-size: 15px;
+}
+.formContainer {
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+.showPassword {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.showPassword label {
+    font-size: 14.5px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.passwordCheck {
+    background-color: white;
+    height:20px;
+    width: 20px;
+    cursor: pointer;
+}
+.rightImage {
+    width: 35%;
+    height: auto;
+    margin-right:20px;
+    margin-left: 20px;
+}
+.rightImage p {
+    text-align: center;
+    font-weight: 200;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form {
+    width: 50%;
+
+}
+
+/*  media query */
+ @media screen and (max-width: 600px) {
+
+    .rightImage {
+        display: none;
+    }
+    
+    .container {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .form {
+        width: 100%;
+    }
+ }
